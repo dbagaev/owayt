@@ -1,0 +1,92 @@
+/**
+ * Page header styles
+ *
+ * @package owayt
+ */
+ 
+ #masthead {
+	background-color: $body-bg;
+	padding: 0px;
+    margin: 8px auto 24px auto;
+}
+
+.site-title,
+.site-description {
+    font-family: Neucha, Engine, Verdana !important;
+    color: $brand-color;
+    background: inherit; 
+	font-weight: normal;
+	margin: 0;
+}
+.site-title {
+    font-size: $site-title-size;;
+	color: $brand-color;
+    a {
+	    color: $brand-color !important;
+      	text-decoration: none;
+    }
+}
+
+.site-description {
+    font-family: Beer Money, Verdana !important;
+	font-size: $site-description-size;
+	font-size: 16pt;
+    font-style: italic;
+    margin-top: -16px;
+    padding-left: 16px;
+}
+
+.navbar-form {
+	margin: 0px inherit 0px inherit;
+}
+
+@media only screen and (max-width: 767px) {
+	/* Improve font size and spacing on dropdown menu on mobile/tablets */
+	.navbar-nav .open .dropdown-menu > li > a {
+		padding: 12px 15px 12px 25px;
+	}
+	.navbar .nav > li > a, .navbar .dropdown-menu a {
+		font-size: 18px;
+		font-weight: normal;
+		padding: 15px 20px;
+	}
+
+	.footer-nav.mobile {
+		border-bottom: 1px solid #ccc;
+		height: auto;
+		margin: 0 auto;
+		max-width: 100%;
+		padding: 10px 0 0;
+		width: auto;
+		li {
+			float: none;
+			height: auto;
+			padding: 0;
+			a {
+				border: solid 0 #ccc;
+				border-width: 1px 0 0;
+				color: #555;
+				display: block;
+				font-size: $dropdown-menu-font-size;
+				height: auto;
+				margin: 0;
+				padding: 18px 20px;
+				width: auto;
+				&:hover {
+					background-color: #2a6496;
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.footer-nav.mobile li.current-menu-item a {
+		background: #428bca;
+		border: none;
+		color: #fff;
+		margin: 0;
+		position: static;
+		top: 0px;
+	}
+}

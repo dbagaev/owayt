@@ -1,0 +1,112 @@
+#sidebar {
+  margin-left: 10px;
+  padding-top: 8px;
+  	font-family: 'Cuprum', Helvetica, sans-serif;
+  
+  /*-- subscriber counter widget --*/ 
+  
+  	.widget-title {
+    	margin-bottom: 6px;
+	    color: #41924b;
+    	border-top: solid 1px #41924b;
+	    border-bottom: solid 2px #b3bdb4;
+    	padding: 6px 0px 0px 0px;
+	    font-size: 11pt;
+    	font-family: Azoft Sans;
+	   	a {
+    	color: inherit; 
+    	}
+    }
+    
+  	.widget {
+    	padding-bottom: 0px;
+    	margin-top: 8px;
+    	overflow: hidden;
+    	font-size: 14px;
+    	
+  		&:first-child {
+    		margin-top: 16px;
+    		padding-top: 8px; 
+    	}
+  		&:last-child {
+    		border-bottom: none; 
+    	}
+    	
+  		ul {
+    		margin: 0;
+    		padding: 0;
+    		
+  			li {
+    			background: url("images/arrow-sidebar.png") no-repeat left 9px;
+    			border-bottom: 1px dotted #E7E7E7;
+    			color: #444444;
+    			margin: 0;
+    			overflow: hidden;
+    			padding: 6px 15px 6px 0px;
+    			
+    			&:last-child {
+    				border-bottom: none; 
+    			} 
+    		}
+    	}
+    
+	}
+    
+  #sidebar .widget_social_count ul {
+    overflow: hidden; }
+  #sidebar .widget_social_count a {
+    color: #737373; }
+  #sidebar .widget_social_count li {
+    float: left;
+    font-size: 23px;
+    line-height: 13px;
+    font-weight: bold;
+    color: #666;
+    padding-top: 9px;
+    padding-left: 40px;
+    border-bottom: none; }
+  #sidebar .widget_social_count li .small {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #999; }
+  #sidebar .widget_social_count li .small a {
+    color: #999; }
+  #sidebar .widget_social_count .rss {
+    background: url(images/rss32.png) 0px 5px no-repeat;
+    margin-right: 15px;
+    width: 78px; }
+  #sidebar .widget_social_count .twitter {
+    background: url(images/twitter32.png) 0px 5px no-repeat;
+    width: 75px; }
+  #sidebar .widget_ad125 ul {
+    overflow: auto;
+    margin-top: 10px;
+    margin-left: 15px; }
+  #sidebar .widget_ad125 li {
+    float: left;
+    margin-bottom: 5px;
+    border-bottom: none;
+    background: none;
+    padding: 0; }
+  #sidebar .widget_ad125 li a {
+    display: block; }
+  #sidebar .widget_ad125 li:first-child {
+    float: left;
+    margin-right: 10px; }
+  #sidebar .widget_ad125 li:last-child {
+    float: left;
+    margin-left: 12px; }
+
+/*-- twitter widget --*/
+.widget_tweets {
+  height: 272px; }
+
+.widget_tweets .twtr-ft {
+  display: none; }
+
+.twtr-tweet-text em {
+  display: none !important; }
+
+    }
+  

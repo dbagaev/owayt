@@ -1,0 +1,225 @@
+nav {
+    font-family: 'Azoft Sans' !important;
+    clear: both;
+    width: 100% important;
+    margin: 0px;
+    border: none;
+	background-color: white;
+	
+	div.container {
+		margin: 0px;
+		padding: 0px;
+		
+		div.collapse{
+			margin-left: 0px;
+			padding-left: 0px;
+		}
+	} 
+}
+
+nav.top-navigation {
+	border: none;
+	    
+	.container {
+		margin-bottom: 0px;
+  		padding-bottom: 0px;
+  		margin: 0 auto;
+  		color: $brand-color;
+  		background-color: white; 
+  	}
+  	
+  	ul {
+  		margin: 0;
+  		padding: 0px 8px 8px 0px;
+  		list-style: none;
+  		text-align: left;
+  	}
+  	
+  	ul > li.menu-item {
+  		margin: 0;
+  		margin-right: 16px;
+  		padding: 2px 16px 0px 16px;
+  		background-color: white;
+  		border-top: solid 1px #41924b;
+  		border-bottom: solid 2px #41924b;
+  		
+  		&:hover{
+  			color: $brand-color;
+  		} 
+  	}
+  	
+	ul > li.menu-item > a {
+  		font-size: 14px;
+  		font-weight: 700;
+  		text-transform: uppercase;
+  		color: #41924B !important; 
+  		padding: 2px 0px 0px 0px;
+  	}
+  	
+	ul.dropdown-menu {
+  		list-style: none;
+  		width: 190px;
+  		left: 10px;
+  		background-color: white !important;
+  		border: solid 1px #41924b;
+  		margin: -2px 0 0 0;
+  		padding: 4px 16px;
+  		-webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.4);
+  		-moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.4);
+  		box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.4);
+  	
+  		li {
+  			border: none; 
+	  	}  	
+  		 
+		a {
+	  		display: block !important;
+  			text-transform: none;
+  			font-size: 14px;
+	  		font-weight: 700;
+  			padding: 4px 0px;
+  			color: #41924B !important;
+	  		border: none; 
+  		}
+  	}
+
+
+	ul li ul li ul {
+  		margin: -30px 0 0 180px; 
+  	}
+
+	.sf-sub-indicator {
+  		display: none; 
+  	}
+
+	ul.dropdown-menu li.current-menu-item a,
+	ul.dropdown-menu li.current-page-ancestor a,
+	ul.dropdown-menu li.current-menu-ancestor a 
+	{
+  		color: #41924B !important; 
+  	}
+  	
+  	
+  	
+}
+
+#TopMenu select {
+  display: none;
+  z-index: 3000;
+  position: relative;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  height: 34px;
+  color: #555555;
+  font-family: inherit; 
+}
+
+nav#nav-below.post-navigation {
+	max-width: 50% !important;
+	margin: 0, auto !important;
+	
+	ul {
+		a {
+			color: white;
+			font-weight: bold;
+			display: inline-block;
+			visibility: hidden;
+			white-space: nowrap;
+			margin: 0 0px;
+			vertical-align: middle;
+			padding: 16px 16px 14px 16px !important;
+		}
+	
+		li {
+			position: fixed;
+			top: 50%;	
+			margin: 0px;
+			width: 32px;
+			overflow: hidden;
+			opacity: 0.2;
+			vertical-align: middle;
+		
+			&.previous {
+				left: 0px;
+				padding: 0px 32px 0px 0px !important;
+			
+				background-color: $brand-color;
+				background-position: right center; 
+				background-repeat: no-repeat;
+				background-image: url('img/prev.png');
+			
+				border-top-right-radius: 3px;
+				-moz-border-top-right-radius: 3px;
+				border-bottom-right-radius: 3px;
+				-moz-border-bottom-right-radius: 3px;
+			}
+		
+			&.next {				
+				right: 0px;
+				text-align: right;
+ 				padding: 0px 0px 0px 32px !important;			
+			
+				background-color: $brand-color;
+				background-position: left center; 
+				background-repeat: no-repeat;
+				background-image: url('img/next.png');
+			
+				border-top-left-radius: 3px;
+				-moz-border-top-left-radius: 3px;
+				border-bottom-left-radius: 3px;
+				-moz-border-bottom-left-radius: 3px;		
+			}
+		}
+	}
+}
+
+nav.navbar-fixed-top.top-navigation
+{
+	z-index: 200;
+	background: none;
+	
+	.navbar-site-title {
+		font-family: Neucha,Engine,Verdana !important;
+		font-size: 18px;
+		font-weight: normal;
+		
+		margin: 0px 64px 0px 4px;
+	
+		a {
+			color: inherit;
+		}
+	}
+	
+	.container {
+		margin-top: 0;
+		padding-top: 0;
+		height: 40px;
+		background: none;
+	}
+	
+	ul {
+		background: none;
+		margin-top: 0px;
+		padding-top: 0px;
+		
+		li { 
+			background: none; 
+		}
+	}
+}
+
+.top-navigation-background {
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	height: 32px;	
+	z-index: 100;
+	opacity: 0;
+}
+
+.icon-bar {
+	background-color: $brand-color;
+}
+
+

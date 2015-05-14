@@ -1,0 +1,27 @@
+// Theme variables
+// Add your custom variables here.
+// You can also override the default Bootstrap variables here.
+
+$font-family-sans-serif: "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: "PT Serif", Georgia, "Times New Roman", Times, serif;
+
+// Font sizes
+$font-size-base: 14px;
+// Example overrides
+// $font-size-h1: floor(($font-size-base * 2.2));
+// $font-size-h2: floor(($font-size-base * 2));
+// $font-size-h3: ceil(($font-size-base * 1.55));
+// $font-size-h4: ceil(($font-size-base * 1.25));
+// $font-size-h5: $font-size-base;
+// $font-size-h6: ceil(($font-size-base * 0.85));
+
+$dropdown-menu-font-size: ceil(($font-size-base * 0.9));
+$site-title-size: 42pt;
+$site-description-size: 16pt;
+
+$line-height-base: 1.667;
+$icon-font-path: "fonts/bootstrap/";
+
+$brand-color: #41924b;
+
+$container-xs: 640px; 

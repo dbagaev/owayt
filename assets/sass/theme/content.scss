@@ -1,0 +1,597 @@
+/* Post list*/
+
+.content-area {
+	padding: 0px !important;
+}
+
+.full-width {
+    /* Set up proportionate scaling */
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+  
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;  
+    
+    @extend p;			
+    
+}
+
+article {
+   	padding: 12px 16px 8px 0px;
+   	border-top: solid 1px #dddddd;
+   	
+   	&.post-single {
+   		border: none;
+   		padding-top: 0px;
+   	}
+   	
+   	/* Default post layout */ 
+   	.entry-header {
+   		position: relative;
+   		
+   		.wp-post-image {
+   			@extend .full-width;   		
+   		}
+   		
+   	   	.entry-title {   	   		
+   	   		font-size: 48px;
+   	   		font-family: 'Cuprum', Helvetica, sans-serif;
+   	   		font-weight: normal;
+   	   		color: $gray-dark; 
+			
+			@media screen and (max-width: $container-md) and ( min-width: $container-xs ){
+				font-size: 22px;
+			}			
+		}
+		
+    }
+   	
+	.entry-content, .entry-footer {
+		position: relative;
+	
+	   	&>p {
+   			text-align: justify;
+   			font-size: 16px;
+   			line-height: 1.4;
+    		 
+    		&:first-child {
+    			font-style: italic;
+    			margin-left: 16px;
+    			margin-right: 16px;
+   		   		color: $gray-dark; 
+    		}
+    		 
+    		@media screen and ( max-width: $container-sm ) 
+    		{
+    			font-size: 14px;
+    		}    		
+    		 
+	  		img {
+    			padding: 2px;
+    			border: solid 1px #dddddd; 
+    		}
+
+	  		img[align="right"],
+  			img.alignright {
+    			margin: 2px 0px 2px 4px;
+    			@media screen and ( max-width: $container-xs ) 
+	    		{
+    				display: block;
+    				float: none;
+    				max-width: 100%;
+	    		}
+    		}
+    	
+  			img[align="left"],
+	  		img.alignleft {
+    			margin: 2px 4px 0px 2px;
+    			padding-left: 0px;
+    			@media screen and ( max-width: $container-sm ) 
+	    		{
+    				display: block;
+    				float: none;
+    				max-width: 100%;
+	    		}
+    		}
+    	}
+
+    	.adaptive-width
+    	{
+    		display: inline-block;
+    		max-width: 100%;
+
+    		img {
+    			width: 100%;
+	   			margin-top: 8px;
+   				margin-bottom: 8px;
+			}
+			
+			@extend p;			
+		}
+    	
+    	.text-width
+    	{
+			padding: 0px;
+			text-align: center;
+    		
+    		img {
+    			width: 100%;
+	   			margin-top: 8px;
+   				margin-bottom: 8px;
+			}
+			
+			@extend p;
+    	}
+    	
+	}
+ 
+ 	/* Full-width post layout */
+ 	&.layout-1c:not(.post-exceprt) {
+   		padding: 0px 0px 8px 0px;
+	
+   		.entry-header {
+   			position: relative;
+   		
+   			.thumbnail.wp-post-image {
+   				@extend .full-width;   		
+   			}
+   		
+   	   		.entry-title {   	   		
+   	   			font-size: 64px;
+	   	   		font-family: 'Cuprum', Helvetica, sans-serif;
+   		   		font-weight: normal;
+   	   			margin-left: 48px;
+   	   			margin-right: 48px;
+   	   			color: white; 
+				position: absolute;
+				bottom: 200px;
+				z-index: 50;
+			
+				@media screen and (max-width: $container-lg)  and (min-width: $container-sm) {
+					bottom: 150px;
+   	   				font-size: 36px;
+				}
+			
+				@media screen and (max-width: $container-sm) and ( min-width: $container-xs ){
+					font-size: 22px;
+		    		margin-left: 20px;
+    				margin-right: 20px;
+	   		   		color: $gray-dark; 
+					position: static;
+				}
+				
+	    		@media screen and ( max-width: $container-xs ) 
+    			{
+					font-size: 22px;
+					color: $gray-dark; 
+					position: static;
+					margin-left: 8px;
+    				margin-right: 8px;
+		    	}
+			}
+    	}
+   	   	
+   	   	.content-element
+   	   	{
+   			margin-left: auto;
+   			margin-right: auto;
+			max-width: 640px;
+			@media screen and ( max-width: $container-sm ) and ( min-width: $container-xs )  
+	    	{
+    			margin-left: 20px;
+    			margin-right: 20px;
+    			max-width: 100%;
+    		}
+    		@media screen and ( max-width: $container-xs ) 
+    		{
+    			margin-left: 8px;
+    			margin-right: 8px;
+    			max-width: 100%;
+    		}
+		}
+   	   	
+   	   	.enty-footer {
+   	   	}
+   	   	
+   		.entry-content {   		
+   			width: 100%;
+
+			* {
+				@extend .content-element;
+   			}
+    	    	
+	   		&>p {
+				text-align: justify;
+   				font-size: 16px;
+   				line-height: 1.4;
+    		 
+    			&:first-child {
+    				position: absolute;
+    				top: -200px;
+    				font-style: italic;
+    				margin-left: 0px;
+    				max-width: 55%;
+    				color: white;
+    				font-size: 22px;
+    				text-align: left;
+	    			left: 48px !important;
+    			
+					@media screen and (max-width: $container-lg)  and (min-width: $container-sm) {
+						top: -150px;
+   	   					font-size: 18px;
+					}
+					@media screen and (max-width: $container-sm) {
+						font-size: 14px;
+			    		margin-left: 8px;
+    					margin-right: 8px;
+	   			   		color: $gray-dark; 
+						position: static;
+						text-align: justify !important;
+						max-width: 100% !important;					
+					}
+    			}
+    		
+    			@media screen and ( max-width: $container-sm ) 
+	    		{
+    				font-size: 14px;
+    			}    		
+    		
+    		     		 
+	  			img {    			
+    				&[align="right"],
+  					&.alignright {
+    					margin: 2px -140px 2px 4px;
+    				
+    					@media screen and ( max-width: $container-md ) and ( min-width: $container-xs )  
+		    			{
+    						margin: 2px 0px 2px 4px !important;
+    					} 
+    					@media screen and ( max-width: $container-xs ) 
+	    				{
+    						margin: 2px auto 6px auto;
+							display: block;
+    						float: none;
+    						max-width: 100%;
+	    				}
+    				}
+    			
+    			&[align="left"],
+	  			&.alignleft {
+    				margin: 2px 4px 2px -140px;
+    				padding-left: 0px;
+    				@media screen and ( max-width: $container-md ) and ( min-width: $container-xs ) 
+	    			{
+    					margin: 2px 4px 2px 0px !important;
+    				} 
+    				@media screen and ( max-width: $container-xs ) 
+	    			{
+    					margin: 2px auto 6px auto;
+						display: block;
+    					float: none;
+    					max-width: 100%;
+	    			}
+    			}
+    		}    		
+    	}
+    	
+    	img {
+    	    padding: 2px;
+    		border: solid 1px #dddddd;
+		}
+		
+		img.full-width, .full-width img {
+		    @extend .full-width;
+			margin-top: 8px;
+    		margin-bottom: 8px;
+    		border: none;
+		}    	
+    	    	
+    	.centered
+    	{
+    		max-width: 100%;
+    		margin: 0px;
+    		text-align: center;	
+		}
+    		
+    	.adaptive-width
+    	{
+    		display: inline-block;
+    		max-width: 100%;
+
+    		img {
+    			width: 100%;
+	   			margin-top: 8px;
+   				margin-bottom: 8px;
+			}
+			
+			@extend p;			
+		}
+		
+		.text-width
+    	{
+			padding: 0px;
+			text-align: center;
+			display: block;
+    		
+    		img {
+    			width: 100%;
+	   			margin-top: 8px;
+   				margin-bottom: 8px;
+			}
+			
+			@extend .content-element;
+    	}
+		
+    		    	
+    	.epigraph {
+    		font-style: italic;
+    		max-width: 640px !important;
+    		margin-left: auto;
+    		margin-right: auto;
+    		padding-left: 50%;
+    	}    	
+    	
+    	.entry-published-date {
+    		text-align: right;
+    		font-style: itallic;
+    	}
+    	
+    	.incut {
+    	    font-family: 'Cuprum', Helvetica, sans-serif;
+    	    font-size: 13px;
+    	    line-height: 17px;
+    	    color: #666666;
+    		background-color: #f0f0f0; 
+    		border: solid #bbbbbb 1px; 
+    		font-style: italic; 
+    		padding: 4px 16px;
+    		margin-bottom: 20px;
+    		
+    		p, h1, h2, h3 {
+    			margin: 4px 0px;
+    			text-align: left;
+    		}
+    		
+    		&.right
+    		{
+    			min-width: 320px;
+    			max-width: 360px;
+    			float: right;
+    			margin: 4px -140px 4px 8px;
+    			
+  				@media screen and ( max-width: $container-md ) and ( min-width: $container-xs ) 
+    			{
+   					margin: 2px 0px 2px 8px;
+   					padding: 2px 8px;
+   				} 
+   				@media screen and ( max-width: $container-xs ) 
+    			{
+   					padding: 2px 4px;
+					margin: 2px 0px 20px 0px;
+					display: block;
+   					float: none;
+   					max-width: 100%;
+    			}
+
+    		}
+    		
+    		&.left
+    		{
+    			min-width: 320px;
+    			max-width: 360px;
+    			float: left;
+    			margin: 4px 8px 4px -140px;
+   				@media screen and ( max-width: $container-md ) and ( min-width: $container-xs ) 
+    			{
+   					margin: 2px 8px 2px 0px;
+   					padding: 2px 8px;
+   				} 
+   				@media screen and ( max-width: $container-xs ) 
+    			{
+   					padding: 2px 4px;
+   					margin: 2px 0px 20px 0px;
+					display: block;
+   					float: none;
+   					max-width: 100%;
+    			}
+			}
+    		
+    	}
+    	    	
+    	
+   	}
+}
+   	
+    /* Styles for post exceprts*/
+	&.post-exceprt {
+		min-height: 163px;
+		margin: 0px !important;
+	
+	   	&:first-child {
+    	 	padding-top: 16px;
+      		border-top: none;
+		}
+		
+		.post-image {
+			float: left;
+			margin-right: 15px;
+			margin-left: -15px;
+		}
+		
+		h1 {
+			font-size: 22px;
+			font-weight: bold;
+			font-family: 'Cuprum', Helvetica, Helvetica, Arial, sans-serif;
+			color: $gray-dark;
+   	   		margin-top: -6px;
+			a {
+				font-size: 22px;
+				font-weight: bold;
+				text-decoration:none;
+				color: $gray-dark;
+			}
+		}
+		
+		.exceprt p {
+			font-size: 14px;
+    		margin: 0px 0px 7px 0px;
+    		padding: 0px;
+    		text-align: justify; 
+    	}
+  		
+  		.page-title {
+    		margin-bottom: 20px; 
+    	}
+    	
+  		.post-meta {
+    		font-size: 12px;
+    		color: #888888;
+    		margin-bottom: 5px;
+    		margin-top: -3px;
+    	}		
+    	
+    	.more {
+    	    margin-top: -3px;
+    	}
+		
+	}
+	
+}
+
+/* The meta data displayed within a post footer. */
+.entry-footer {	
+	@extend .content-element;
+	
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;	
+	clear: both;
+	font-size: 16px;
+	min-height: 20px;
+	padding: 15px 0px 15px 0px;
+	
+	max-width: 100%;
+	
+	@media screen and ( max-width: $container-sm ) 
+    {
+    	font-size: 14px;
+    }    		
+	
+	.entry-categories {
+		text-align: left;
+		padding-left: 0px !important;
+		a {
+		    font-style: italic;
+		    
+		    &:hover {
+		        text-decoration: underline;
+		    }
+		}
+	}
+
+	.entry-tags {		
+	
+		@media screen and ( min-width: $container-sm ) 
+    	{
+    		text-align: right;
+    		padding-right: 0px !important;	
+    		padding-left: inherit !important;
+    	}        		
+		
+		@extend .entry-categories;
+	}
+	
+	.glyphicon {
+		margin-right: 4px;
+	}
+}
+
+
+
+
+
+
+
+#main-row {
+	margin-top: 10px;
+}
+
+/* The article wrapper that displays the content of a post/page/whatever */
+.entry-title {
+	margin-top: 0;
+	word-wrap: break-word;
+}
+.entry-meta {
+	font-size: ceil(($font-size-base * 0.9));
+}
+.updated:not(.published) {
+	display: none;
+}
+/* Post/page and comment content */
+.entry-content {
+	padding: 15px 0;
+	word-wrap: break-word;
+}
+p {
+	margin-bottom: 1.625em;
+}
+/* Remove margins from page-header that get set above if used inside a post/page */
+.page-header,
+.page-header .page-title {
+	margin-top: 0;
+}
+/* Space out the archives descriptions from the names */
+.page-header .taxonomy-description p {
+	font-size: 1.15em;
+	margin: 10px 3px;
+}
+
+/* Pads the paging links within a post or page */
+.page-links {
+	padding: 7px 0;
+}
+
+/* Images */
+p img {
+	margin-bottom: 0.5em;
+	margin-top: 0.4em;
+}
+#content .gallery .gallery-icon img {
+	border: 1px solid #ddd;
+	height: auto;
+	padding: 6px;
+}
+img.header-image,
+img.wp-post-image,
+img.avatar,
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"],
+.comment-content img,
+.widget img {
+	height: auto;
+	max-width: 100%;
+	padding: 0;
+}
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+/* Image captions */
+.wp-caption {
+	border: 1px solid #ccc;
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+.wp-caption img {
+	display: block;
+	margin: 1.2% auto 0;
+	max-width: 98%;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	margin: 0.8075em 0;
+	padding-left: 10px;
+}

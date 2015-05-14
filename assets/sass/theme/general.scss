@@ -1,0 +1,288 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+:focus {
+  outline: 0; }
+
+body {
+  background: #ffffff; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  font-weight: normal;
+  text-align: left; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+a img {
+  border: 0; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.4; }
+
+h1 {
+  font-size: 26px; }
+
+h2 {
+  font-size: 22px; }
+
+h3 {
+  font-size: 16px; }
+
+h4 {
+  font-size: 14px; }
+
+h5 {
+  font-size: 13px; }
+
+a {
+  -moz-transition: background-color 0.2s linear 0s; }
+
+a:link {
+  color: #4581B9;
+  text-decoration: none; }
+
+a:visited {
+  color: #4581B9; }
+
+a:active {
+  color: #404B58; }
+
+a:hover {
+  color: #404B58; }
+
+ul, ol {
+  margin: 0 0 1.5em 2.5em; }
+
+ul {
+  list-style: square; }
+
+ol {
+  list-style-type: decimal; }
+
+ol ol {
+  list-style: upper-alpha; }
+
+ol ol ol {
+  list-style: lower-roman; }
+
+ol ol ol ol {
+  list-style: lower-alpha; }
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-bottom: 0; }
+
+dl {
+  margin: 0 1.5em; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin-bottom: 1.5em; }
+
+strong {
+  font-weight: bold; }
+
+small {
+  font-size: 80%; }
+
+big {
+  font-size: 120%; }
+
+cite, em, i {
+  font-style: italic; }
+
+cite {
+  border: none; }
+
+blockquote {
+  font-style: italic;
+  margin: 7px 35px 7px 45px;
+  font-style: italic;
+  background: #f7f7f7;
+  padding: 10px; }
+
+blockquote p {
+  margin: 0px;
+  padding: 0px; }
+
+blockquote em, blockquote i, blockquote cite {
+  font-style: normal; }
+
+pre {
+  background: rgba(0, 0, 0, 0.05);
+  font: 87.5% "Courier 10 Pitch", Courier, monospace;
+  line-height: normal;
+  margin-bottom: 1.5em;
+  padding: 0.75em 1.5em; }
+
+code, kbd {
+  font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
+
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+
+ins {
+  background: #fff9c0;
+  text-decoration: none; }
+
+sup, sub {
+  font-size: 62.5%;
+  height: 0;
+  line-height: 1;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  bottom: 1ex; }
+
+sub {
+  top: .5ex; }
+
+input[type=text], textarea {
+  border: 1px solid #E7E7E7; }
+
+textarea {
+  padding-left: 3px;
+  width: 98%; }
+
+address {
+  display: block;
+  margin: 0 0 1.625em; }
+
+table {
+  border-bottom: 1px solid #ddd;
+  margin: 0 0 1.625em;
+  width: 100%;
+  text-align: left; }
+
+th {
+  color: #666;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 2.6em; }
+
+td {
+  border-top: 1px solid #ddd;
+  padding: 6px 10px 6px 0; }
+
+p {
+  margin-bottom: 15px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*-- WordPress common classes*/
+.clear {
+  clear: both; }
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.25em; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.25em; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.alignnone {
+  display: inline;
+  float: left;
+  margin-right: 1.25em; }
+
+img.alignleft,
+img.alignright,
+img.aligncenter {
+  margin-bottom: 1.25em; }
+
+p img,
+.wp-caption {
+  margin-top: 0.4em; }
+
+.wp-caption {
+  margin-bottom: 1.25em;
+  max-width: 96%;
+  text-align: center; }
+
+.wp-caption img {
+  display: block;
+  margin: 0 auto;
+  max-width: 98%; }
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+  color: #666;
+  font-size: 12px; }
+
+.gallery {
+  margin-bottom: 15px !important; }
+
+.gallery dl {
+  margin: 0; }
+
+.gallery img {
+  border: none !important; }
+
+/***************************************************************************************************
+ * Base elements
+ *
+ */
+body {
+  	color: #555555;
+  	font-size: 13px;
+ }
+
+#container {
+	margin: 0 auto; 
+}
+
+#content-container {
+  background: #ffffff;
+  overflow: hidden;
+  border: none; }
+
+#content { }
+
+.wide-content {
+  width: 100% !important; }

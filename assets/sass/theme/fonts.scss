@@ -1,0 +1,43 @@
+@import "http://webfonts.ru/import/cuprum.css";
+@import "http://webfonts.ru/import/bitter.css";
+@import "http://webfonts.ru/import/forum.css";
+@import "http://webfonts.ru/import/beermoney.css";
+@import "http://webfonts.ru/import/engine.css";
+@import "http://webfonts.ru/import/neucha.css";
+@import "http://webfonts.ru/import/azoft.css";
+
+/** PT Serif Lat+Cyr in several weights/styles
+  * Sorce could be found here: https://www.google.com/fonts/specimen/PT+Serif
+  *
+  * By default open fonts are loaded from Google Static, but they arei ncluded in theme so you 
+  * could just uncomment corresponding lines below to change font source.
+  */
+
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Serif'), local('PTSerif-Regular'), url(http://fonts.gstatic.com/s/ptserif/v8/zjBCKJs0bE-LvM0teIV5VPesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+  /* src: local('PT Serif'), local('PTSerif-Regular'), url(assets/fonts/bootstrap/PTSerif-Regular.woff) format('woff'); */
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Serif Bold'), local('PTSerif-Bold'), url(http://fonts.gstatic.com/s/ptserif/v8/QABk9IxT-LFTJ_dQzv7xpGOb2gHztoQeulij-1lvl-8.woff) format('woff');
+  /* src: local('PT Serif Bold'), local('PTSerif-Bold'), url(assets/fonts/bootstrap/PTSerif-Bold.woff) format('woff'); */
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Serif Italic'), local('PTSerif-Italic'), url(http://fonts.gstatic.com/s/ptserif/v8/3Nwg9VzlwLXPq3fNKwVRMBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+  /* src: local('PT Serif Italic'), local('PTSerif-Italic'), url(assets/fonts/bootstrap/PTSerif-Italic.woff) format('woff'); */
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Serif Bold Italic'), local('PTSerif-BoldItalic'), url(http://fonts.gstatic.com/s/ptserif/v8/Foydq9xJp--nfYIx2TBz9Qazkjc8o6z915lYPPIG3mo.woff) format('woff');
+  /* src: local('PT Serif Bold Italic'), local('PTSerif-BoldItalic'), url(assets/fonts/bootstrap/PTSerif-BoldItalic.woff) format('woff'); */  
+}
